@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>하나밖에 없는 포켓몬 도감 (버튼형)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f5;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .main-wrapper {
+            width: 90%;
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- 1. 상단 메뉴 영역 --- */
+        .pokemon-menu {
+            margin: 20px 0;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        /* 버튼 공통 스타일 */
+        .menu-button {
+            display: block; /* 가로 전체를 차지하는 블록 요소 */
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 5px; /* 버튼 사이 간격 */
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        /* 현재 선택된 버튼 (활성화 버튼) 스타일 */
+        .menu-button.active {
+            background-color: #8649cc; /* 보라색 배경 */
+            color: white;
+            border-color: #8649cc; /* 보라색 배경 */
+            bordborder-colo
+        }
+
+        .menu-button:hover:not(.active) {
+            background-color: #f0f0f0;
+        }
+
+        /* --- 2. 콘텐츠 영역 --- */
+        .content-section {
+            text-align: left;
+            padding-top: 20px;
+        }
+
+        .pokemon-title {
+            text-align: center;
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .content-section img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto 20px auto;
+            border: 1px solid #ddd;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        /* 테이블 스타일 */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* 셀 경계선 합치기 */
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <h1 style="color: #333;">20215 정수영</h1>
+        <h3 style="color: #666; margin-bottom: 30px;">내가 가장 좋아하는 포켓몬</h3>
+        
+        <img src="포켓몬 단체 이미지.png" style="max-width: 250px; height: auto;">
+
+        <nav class="pokemon-menu">
+            <a href="#" class="menu-button active">피카츄</a>
+            <a href="#" class="menu-button active">이브이</a>
+        </nav>
+        
+        <section class="content-section">
+            
+            <div class="pokemon-title">피카츄</div>
+            
+            <img src="피카츄.png" >
+            
+            <p>
+                가위로 물의 전기주머니가 양쪽 볼에 일부 노출되어 있어 양 볼이 붉으며 이 곳을 통하여 전기를 발산한다. 전능
+                력돌을 사용하면 라이츄로 최종 진화하며 금/은에서는 공박사가 이기 포켓몬을 발견하여 피카츄가 진화
+                한 포켓몬이라는 설명을 추가하였다. 그런데 사실 피카츄 1세대에도 피카츄가 이미 중간 단계로 진화한 포켓몬이라는 암
+                시가 있긴 하다. 4세대부터 암컷일 경우 꼬리 끝이 뭉글뭉글한 모양으로 갈라져 있는 것이 특징. 개체마다 다르겠지만, 대체는 몬스터볼 같은 좁은 곳을 싫어한다고 한다. 지우의
+                피카츄가 평소에 밖에 나와있는 것도 이런 이유. 또한 케첩을 매우 좋아하는 것으로도 나와있다.
+            </p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>포켓몬</th>
+                        <th>HP</th>
+                        <th>공격</th>
+                        <th>방어</th>
+                        <th>특수공격</th>
+                        <th>특수방어</th>
+                        <th>스피드</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>피카츄</td>
+                        <td>1</td>
+                        <td>35</td>
+                        <td>55</td>
+                        <td>40</td>
+                        <td>1</td>
+                        <td>50</td>
+                </tbody>
+    
+         </section>
+            <div class="pokemon-title">이브이</div>
+        <img src="이브이.png" >
+            
+            <p>  환경에 따라 모습과 타입이 다양하게 변화하는 것이 특징인 포켓몬입니다. 유전자 배열이 불안정하여 주변의 환경 변화에 민감하게 반응하며, 이로 인해 여러 가지 형태로 진화할 수 있는 잠재력을 지니고 있습니다. 불의 돌, 물의 돌, 천둥의 돌 등의 특정 진화의 돌이나, 높은 친밀도, 특정 시간대와 장소 등 다양한 조건에 따라 서로 다른 모습과 타입으로 진화합니다. 현재까지 8가지의 진화형이 존재하며, 이는 이브이가 '진화의 포켓몬'이라는 별명을 가지게 된 이유입니다.</p>
+            <p>  이브이는 주로 평범한 풀밭이나 도시 근교에서 발견되며, 복슬복슬한 털과 커다란 눈이 특징입니다. 매우 순하고 애교가 많아 트레이너들에게 인기가 높으며, 파트너 포켓몬으로 선택하는 경우도 많습니다. 여러 진화 형태를 통해 다양한 전략을 구사할 수 있어 트레이너의 선택에 따라 무한한 가능성을 지닌 존재로 상징됩니다.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>포켓몬</th>
+                        <th>HP</th>
+                        <th>공격</th>
+                        <th>방어</th>
+                        <th>특수공격</th>
+                        <th>특수방어</th>
+                        <th>스피드</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>이브이</td>
+                        <td>55</td>
+                        <td>55</td>
+                        <td>50</td>
+                        <td>45</td>
+                        <td>65</td>
+                        <td>55</td>
+                    </tr>
+                </tbody>
+            </table>
+       </section>
+    </div>
+</body>
+</html>
