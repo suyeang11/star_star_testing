@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>하나밖에 없는 포켓몬도감(버튼형)</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+         <body>
+         {font-family: sans-serif;
+          background-color: #f0f0f5;
+          text-center
+          center;margin: 0;
+          padding: 0;} 
+          <body class="text-center">
+
+            <div class= "mx-auto my-4 p-4 bg-white rounded-3 shadow"style="max-width: 700px;">
+              
+              <div class="my-4 py-2 border-top border-bottom border-light">
+        
+                <nav class="nav justify-content-center">
+                 <a class="nav-link active" href="#">도감 홈</a>
+                 <a class="nav-link" href="#pikachu">피카츄</a>
+                 <a class="nav-link" href="#eevee">이브이</a>
+               </nav>
+        
+              </div>
+        
+            <h4 class="mt-4">20215 정수영</h4>
+            <p class="mb-4 text-secondary">내가 가장 좋아하는 포켓몬</p>
+    
+            <img 
+               src="[다운로드(1).jfif]" 
+               class="img-fluid rounded shadow-sm" 
+              alt="포켓몬 단체 사진"
+            >
+              
+   
+          
+        
+        <div class="tab-content" id="pokemonTabContent">
+            <ul class="nav nav-tabs justify-content-center border-bottom-0 mb-4" id="pokemonTab" role="tablist">
+            
+            <li class="nav-item col-6 p-0" role="presentation">
+                <button class="nav-link active btn-purple-custom w-100 py-3 fs-5" 
+                        id="pikachu-tab" 
+                        data-bs-toggle="tab" 
+                        data-bs-target="#pikachu-content" 
+                        type="button" 
+                        role="tab" 
+                        aria-controls="pikachu-content" 
+                        aria-selected="true">피카츄</button>
+            </li>
+            </ul>
+            
+            <div class="tab-pane fade show active" id="pikachu-content" role="tabpanel" aria-labelledby="pikachu-tab">
+               <div class="text-start mt-4 pt-3 border-top">
+            <h5 class="fs-5 mb-3"role="button">피카츄</h5>
+            <img src="[다운로드.png]" class="img-fluid rounded mb-3" alt="피카츄 이미지">
+            <p>[전기주머니가 양쪽 볼에 일부 노출되어 있어 양볼이 붉으며 이곳을 통해 전기를 발산한다. 4세대부터 암컷일 경우 꼬리 끝이 몽글몽글한 모양으로 갈라져 있는 것이 특징. 지우의 피카츄가 평소에 밖에 나와있는 것도 몬스터볼 같은 좁은 곳을 싫어하기 때문. 케첩을 매우 좋아하는 것으로 나와있다. ]</p>
+             <h5 class="text-start mt-4 mb-2 fs-5">능력치 표</h5>
+            <table class="table table-bordered table-striped text-center w-100 mt-3 small">
+            <thead>
+                <tr>
+                    <th scope="col" class="table-light">포켓몬</th>
+                    <th scope="col" class="table-light">HP</th>
+                    <th scope="col" class="table-light">공격</th>
+                    <th scope="col" class="table-light">방어</th>
+                    <th scope="col" class="table-light">특수공격</th>
+                    <th scope="col" class="table-light">특수방어</th>
+                    <th scope="col" class="table-light">스피드</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">피카츄</th>
+                    <td>35</td>
+                     <td>55</td>
+                    <td>40</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>90</td>
+                </tr>
+                </div>
+              </div>
+            </div>
+              
+              <ul class="nav nav-tabs justify-content-center border-bottom-0 mb-4" id="pokemonTab" role="tablist">
+                <li class="nav-item col-6 p-0" role="presentation">
+                  <button class="nav-link btn-light w-100 py-3 fs-5" 
+                        id="eevee-tab" 
+                        data-bs-toggle="tab" 
+                        data-bs-target="#eevee-content" 
+                        type="button" 
+                        role="tab" 
+                        aria-controls="eevee-content" 
+                        aria-selected="true">이브이</button>
+             </li>
+            </ul>
+            
+            <div class="tab-pane fade show active" id="eevee-content" role="tabpanel" aria-labelledby="eevee-tab">
+               <div class="text-start mt-4 pt-3 border-top">
+              <div class="col-6">
+                <a href="#eevee-detail" 
+                   class="btn btn-light py-3 fs-5 w-100" 
+                   role="button">이브이</a>
+              </div>
+                <div id="eevee-detail"class="text-start mt-4 pt-3 border-top">
+                 <h5 class="fs-5 mb-3"role="button">이브이</h5>
+                 <img src="[다운로드.jfif]" class="img-fluid rounded mb-3" alt="이브이 이미지">
+                 <p class="text-start">[환경에 따라 모습과 타입이 다양하게 변화하는 것이 특징인 포켓몬입니다. 높은 친밀도, 특정 시간대와 장소등 다양한 조건에 따라 서로 다른 모습과 타입으로 진화합니다. 주로 평범한 풀밭이나 도시 근교에서 발견되며, 복슬복슬한 털과 커다란 눈이 특징이다. 매우 순하고 애교가 많아 트레이너들에게 인기가 높으며, 파트너 포켓몬으로 선택하는 경우도 많다. 여기에는 나도 포함된다. ^^]</p>
+                </div>
+             </div>
+            </div>
+         
+           <h5 class="text-start mt-4 mb-2 fs-5">능력치 표</h5>
+        
+        <table class="table table-bordered table-striped text-center w-100 mt-3 small">
+            <thead>
+                <tr>
+                    <th scope="col" class="table-light">포켓몬</th>
+                    <th scope="col" class="table-light">HP</th>
+                    <th scope="col" class="table-light">공격</th>
+                    <th scope="col" class="table-light">방어</th>
+                    <th scope="col" class="table-light">특수공격</th>
+                    <th scope="col" class="table-light">특수방어</th>
+                    <th scope="col" class="table-light">스피드</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                <tr>
+                    <th scope="row">이브이</th>
+                    <td>55</td>
+                    <td>55</td>
+                    <td>50</td>
+                    <td>45</td>
+                    <td>65</td>
+                    <td>55</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
